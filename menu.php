@@ -20,7 +20,8 @@ class Menu
             $res .= "1. Food\n";
             $res .= "2. Drinks\n";
             $res .= "3. Back\n";
-            echo 'CON '.$res;
+
+            return $res;
         }
     }
 }
