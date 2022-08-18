@@ -21,7 +21,7 @@ class Menu
             $res .= "2. Drinks\n";
             $res .= "3. Back\n";
 
-            return $res;
+            echo 'CON '.$res;
         } elseif ($level == 2) {
             $category = $textlevel[1];
             if ($category == 1) {
@@ -30,14 +30,14 @@ class Menu
                 $res .= "2. Burger\n";
                 $res .= "3. Back\n";
 
-                return $res;
+                echo 'CON '.$res;
             } elseif ($category == 2) {
                 $res = "Choose a product \n";
                 $res .= "1. Coke\n";
                 $res .= "2. Pepsi\n";
                 $res .= "3. Back\n";
 
-                return $res;
+                echo 'CON '.$res;
             } elseif ($category == 3) {
                 return $this->mainmenu();
             }
@@ -50,7 +50,7 @@ class Menu
                 $res .= "3. Large\n";
                 $res .= "4. Back\n";
 
-                return $res;
+                echo 'CON '.$res;
             } elseif ($product == 2) {
                 $res = "Choose a size \n";
                 $res .= "1. Small\n";
@@ -58,7 +58,7 @@ class Menu
                 $res .= "3. Large\n";
                 $res .= "4. Back\n";
 
-                return $res;
+                echo 'CON '.$res;
             } elseif ($product == 3) {
                 $res = "Choose a size \n";
                 $res .= "1. Small\n";
@@ -66,7 +66,7 @@ class Menu
                 $res .= "3. Large\n";
                 $res .= "4. Back\n";
 
-                return $res;
+                echo 'CON '.$res;
             } elseif ($product == 4) {
                 return $this->category($textlevel);
             }
@@ -78,14 +78,14 @@ class Menu
                 $res .= "2. Pepsi\n";
                 $res .= "3. Back\n";
 
-                return $res;
+                echo 'CON '.$res;
             } elseif ($size == 2) {
                 $res = "Choose a drink \n";
                 $res .= "1. Coke\n";
                 $res .= "2. Pepsi\n";
                 $res .= "3. Back\n";
 
-                return $res;
+                echo 'CON '.$res;
             } elseif ($size == 3) {
                 return $this->category($textlevel);
             } elseif ($size == 4) {

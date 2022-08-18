@@ -14,7 +14,7 @@ if ($text == '') {
     $textlevel = explode('*', $text);
     switch ($textlevel[0]) {
         case '1':
-            echo 'CON '.$menu->category($textlevel);
+            $menu->category($textlevel);
             break;
             case '2':
                 echo 'END';
