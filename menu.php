@@ -98,9 +98,8 @@ class Menu
             $comfirm = $textlevel[5];
             if ($comfirm == 1) {
                 $res = "Order confirmed item will be deliverd to $phoneNumber \n";
-                $res .= "1. Continue Shopping\n";
-                $res .= "2. Back\n";
-                echo 'CON '.$res;
+
+                echo 'END '.$res;
             } elseif ($comfirm == 2) {
                 return $this->category($textlevel, $phoneNumber);
             }
