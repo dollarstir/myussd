@@ -2,6 +2,7 @@
 
 require 'menu.php';
 $menu = new Menu();
+header('Content-type: text/plain');
 
 $sessionId = $_POST['sesionId'];
 $serviceCode = $_POST['serviceCode'];
