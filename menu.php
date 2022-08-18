@@ -22,6 +22,25 @@ class Menu
             $res .= "3. Back\n";
 
             return $res;
+        } elseif ($level == 2) {
+            $category = $textlevel[1];
+            if ($category == 1) {
+                $res = "Choose a product \n";
+                $res .= "1. Pizza\n";
+                $res .= "2. Burger\n";
+                $res .= "3. Back\n";
+
+                return $res;
+            } elseif ($category == 2) {
+                $res = "Choose a product \n";
+                $res .= "1. Coke\n";
+                $res .= "2. Pepsi\n";
+                $res .= "3. Back\n";
+
+                return $res;
+            } elseif ($category == 3) {
+                return $this->mainmenu();
+            }
         }
     }
 }
