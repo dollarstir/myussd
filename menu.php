@@ -4,10 +4,10 @@ class Menu
 {
     public function mainmenu()
     {
-        $response = 'Welcome to my shop  \n';
-        $response .= '1. Products';
-        $response .= '2. Orders ';
-        $response .= '3. About Us';
+        $response = "Welcome to my shop  \n";
+        $response .= "1. Products\n";
+        $response .= "2. Orders \n ";
+        $response .= "3. About Us \n";
 
         return $response;
     }
