@@ -9,7 +9,7 @@ $phoneNumer = $_POST['phoneNumer'];
 $text = $_POST['text'];
 
 if ($text == '') {
-    echo 'CON'.$menu->mainmenu();
+    echo 'CON '.$menu->mainmenu();
 } else {
     $textlevel = explode('*', $text);
     switch ($textlevel[0]) {
