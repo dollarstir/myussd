@@ -19,7 +19,7 @@ class Menu
             $res = "Choose a category \n";
             $res .= "1. Food\n";
             $res .= "2. Drinks\n";
-            $res .= "98. Back\n";
+            $res .= "3. Back\n";
 
             echo 'CON '.$res;
         } elseif ($level == 2) {
@@ -28,14 +28,14 @@ class Menu
                 $res = "Choose a product \n";
                 $res .= "1. Pizza\n";
                 $res .= "2. Burger\n";
-                $res .= "98. Back\n";
+                $res .= "3. Back\n";
 
                 echo 'CON '.$res;
             } elseif ($category == 2) {
                 $res = "Choose a product \n";
                 $res .= "1. Coke\n";
                 $res .= "2. Pepsi\n";
-                $res .= "98. Back\n";
+                $res .= "3. Back\n";
 
                 echo 'CON '.$res;
             } elseif ($category == 3) {
@@ -48,7 +48,7 @@ class Menu
                 $res .= "1. Small\n";
                 $res .= "2. Medium\n";
                 $res .= "3. Large\n";
-                $res .= "98. Back\n";
+                $res .= "4. Back\n";
 
                 echo 'CON '.$res;
             } elseif ($product == 2) {
@@ -56,7 +56,7 @@ class Menu
                 $res .= "1. Small\n";
                 $res .= "2. Medium\n";
                 $res .= "3. Large\n";
-                $res .= "98. Back\n";
+                $res .= "4. Back\n";
 
                 echo 'CON '.$res;
             } elseif ($product == 3) {
@@ -64,7 +64,7 @@ class Menu
                 $res .= "1. Small\n";
                 $res .= "2. Medium\n";
                 $res .= "3. Large\n";
-                $res .= "98. Back\n";
+                $res .= "4. Back\n";
 
                 echo 'CON '.$res;
             } elseif ($product == 4) {
@@ -97,7 +97,7 @@ class Menu
         } elseif ($level == 6) {
             $comfirm = $textlevel[5];
             if ($comfirm == 1) {
-                $res = "Order confirmed \n";
+                $res = "Order confirmed item will be deliverd to $phoneNumber \n";
                 $res .= "1. Continue Shopping\n";
                 $res .= "2. Back\n";
                 echo 'CON '.$res;
