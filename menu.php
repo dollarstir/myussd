@@ -16,10 +16,11 @@ class Menu
     {
         $level = count($textlevel);
         if ($level == 1) {
-            $res = 'Choose a category \n';
-            $res .= '1. Food';
-            $res .= '2. Drinks';
-            $res .= '3. Back';
+            $res = "Choose a category \n";
+            $res .= "1. Food\n";
+            $res .= "2. Drinks\n";
+            $res .= "3. Back\n";
+            echo 'CON '.$res;
         }
     }
 }
