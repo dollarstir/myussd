@@ -2,7 +2,6 @@
 
 require 'menu.php';
 $menu = new Menu();
-header('Content-type: text/plain');
 
 $sessionId = $_POST['sessionId'];
 $serviceCode = $_POST['serviceCode'];
@@ -17,11 +16,13 @@ if ($text == '') {
         case '1':
             echo 'CON'.$menu->category($textlevel);
             break;
-        case '2':
-            echo 'END';
-            break;
-        default:
-            echo 'END';
-            break;
-    }
+            case '2':
+                echo 'END';
+                break;
+                default:
+                echo 'END';
+                break;
+            }
 }
+
+        header('Content-type: text/plain');
