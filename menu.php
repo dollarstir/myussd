@@ -12,7 +12,14 @@ class Menu
         return $response;
     }
 
-    public function category()
+    public function category($textlevel)
     {
+        $level = count($textlevel);
+        if ($level == 1) {
+            $res = 'Choose a category \n';
+            $res .= '1. Food';
+            $res .= '2. Drinks';
+            $res .= '3. Back';
+        }
     }
 }
