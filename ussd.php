@@ -4,9 +4,9 @@ require 'menu.php';
 $menu = new Menu();
 header('Content-type: text/plain');
 
-$sessionId = $_POST['sesionId'];
+$sessionId = $_POST['sessionId'];
 $serviceCode = $_POST['serviceCode'];
-$phoneNumer = $_POST['phoneNumer'];
+$phoneNumber = $_POST['phoneNumber'];
 $text = $_POST['text'];
 
 if ($text == '') {
