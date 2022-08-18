@@ -12,7 +12,7 @@ class Menu
         return $response;
     }
 
-    public function category($textlevel)
+    public function category($textlevel, $phoneNumber)
     {
         $level = count($textlevel);
         if ($level == 1) {
@@ -68,7 +68,7 @@ class Menu
 
                 echo 'CON '.$res;
             } elseif ($product == 4) {
-                return $this->category($textlevel);
+                return $this->category($textlevel, $phoneNumber);
             }
         } elseif ($level == 4) {
             $size = $textlevel[3];
@@ -85,9 +85,25 @@ class Menu
 
                 echo 'CON '.$res;
             } elseif ($size == 4) {
-                return $this->category($textlevel);
+                return $this->category($textlevel, $phoneNumber);
+            }
+        } elseif ($level == 5) {
+            $product = $textlevel[2];
+            $quantity = $textlevel[4];
+            $res = 'You have ordered '.$quantity.' of '.$product."\n";
+            $res .= "1. Confirm Order\n";
+            $res .= "2. Back\n";
+            echo 'CON '.$res;
+        } elseif ($level == 6) {
+            $comfirm = $textlevel[5];
+            if ($comfirm == 1) {
+                $res = "Order confirmed \n";
+                $res .= "1. Continue Shopping\n";
+                $res .= "2. Back\n";
+                echo 'CON '.$res;
+            } elseif ($comfirm == 2) {
+                return $this->category($textlevel, $phoneNumber);
             }
         }
-        elseif
     }
 }
