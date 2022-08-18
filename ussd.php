@@ -25,4 +25,4 @@ if ($text == '') {
             }
 }
 
-        header('Content-type: text/plain');
+        // header('Content-type: text/plain');
