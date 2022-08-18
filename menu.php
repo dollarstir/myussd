@@ -41,6 +41,56 @@ class Menu
             } elseif ($category == 3) {
                 return $this->mainmenu();
             }
+        } elseif ($level == 3) {
+            $product = $textlevel[2];
+            if ($product == 1) {
+                $res = "Choose a size \n";
+                $res .= "1. Small\n";
+                $res .= "2. Medium\n";
+                $res .= "3. Large\n";
+                $res .= "4. Back\n";
+
+                return $res;
+            } elseif ($product == 2) {
+                $res = "Choose a size \n";
+                $res .= "1. Small\n";
+                $res .= "2. Medium\n";
+                $res .= "3. Large\n";
+                $res .= "4. Back\n";
+
+                return $res;
+            } elseif ($product == 3) {
+                $res = "Choose a size \n";
+                $res .= "1. Small\n";
+                $res .= "2. Medium\n";
+                $res .= "3. Large\n";
+                $res .= "4. Back\n";
+
+                return $res;
+            } elseif ($product == 4) {
+                return $this->category($textlevel);
+            }
+        } elseif ($level == 4) {
+            $size = $textlevel[3];
+            if ($size == 1) {
+                $res = "Choose a drink \n";
+                $res .= "1. Coke\n";
+                $res .= "2. Pepsi\n";
+                $res .= "3. Back\n";
+
+                return $res;
+            } elseif ($size == 2) {
+                $res = "Choose a drink \n";
+                $res .= "1. Coke\n";
+                $res .= "2. Pepsi\n";
+                $res .= "3. Back\n";
+
+                return $res;
+            } elseif ($size == 3) {
+                return $this->category($textlevel);
+            } elseif ($size == 4) {
+                return $this->category($textlevel);
+            }
         }
     }
 }
