@@ -73,21 +73,17 @@ class Menu
         } elseif ($level == 4) {
             $size = $textlevel[3];
             if ($size == 1) {
-                $res = "Choose a drink \n";
-                $res .= "1. Coke\n";
-                $res .= "2. Pepsi\n";
-                $res .= "3. Back\n";
+                $res = "Enter Quantity \n";
 
                 echo 'CON '.$res;
             } elseif ($size == 2) {
-                $res = "Choose a drink \n";
-                $res .= "1. Coke\n";
-                $res .= "2. Pepsi\n";
-                $res .= "3. Back\n";
+                $res = "Enter Quantity \n";
 
                 echo 'CON '.$res;
             } elseif ($size == 3) {
-                return $this->category($textlevel);
+                $res = "Enter Quantity \n";
+
+                echo 'CON '.$res;
             } elseif ($size == 4) {
                 return $this->category($textlevel);
             }
