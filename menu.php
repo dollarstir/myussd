@@ -88,5 +88,6 @@ class Menu
                 return $this->category($textlevel);
             }
         }
+        elseif
     }
 }
