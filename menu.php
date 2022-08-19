@@ -35,7 +35,8 @@ class Menu
                 $res = "Choose a product \n";
                 $res .= "1. Coke\n";
                 $res .= "2. Pepsi\n";
-                $res .= "3. Back\n";
+                $res .= "3. KFC\n";
+                $res .= "4. Back\n";
 
                 echo 'CON '.$res;
             } elseif ($category == 3) {
@@ -45,25 +46,25 @@ class Menu
             $product = $textlevel[2];
             if ($product == 1) {
                 $res = "Choose a size \n";
-                $res .= "1. Small\n";
-                $res .= "2. Medium\n";
-                $res .= "3. Large\n";
+                $res .= "1. Small (GH10) \n";
+                $res .= "2. Medium (GH20)\n";
+                $res .= "3. Large (GH40)\n";
                 $res .= "4. Back\n";
 
                 echo 'CON '.$res;
             } elseif ($product == 2) {
                 $res = "Choose a size \n";
-                $res .= "1. Small\n";
-                $res .= "2. Medium\n";
-                $res .= "3. Large\n";
+                $res .= "1. Small (GH20)\n";
+                $res .= "2. Medium (GH40)\n";
+                $res .= "3. Large (GH50)\n";
                 $res .= "4. Back\n";
 
                 echo 'CON '.$res;
             } elseif ($product == 3) {
                 $res = "Choose a size \n";
-                $res .= "1. Small\n";
-                $res .= "2. Medium\n";
-                $res .= "3. Large\n";
+                $res .= "1. Small (GH30)\n";
+                $res .= "2. Medium (GH40)\n";
+                $res .= "3. Large (GH50)\n";
                 $res .= "4. Back\n";
 
                 echo 'CON '.$res;
@@ -89,6 +90,28 @@ class Menu
             }
         } elseif ($level == 5) {
             $product = $textlevel[2];
+            $size = $textlevel[3];
+
+            switch ($product) {
+                case '1':
+                    $productname = 'Pizza';
+                    if ($size == 1) {
+                        $productsize = 'Small';
+                        $productprice = 'GHS10';
+                    } elseif ($size == 2) {
+                        $productsize = 'Medium';
+                        $productprice = 'GHS20';
+                    } elseif ($size == 3) {
+                        $productsize = 'Large';
+                        $productprice = 'GHS40';
+                    }
+                        break;
+
+                default:
+                    // code...
+                    break;
+            }
+
             $quantity = $textlevel[4];
             $res = 'You have ordered '.$quantity.' of '.$product."\n";
             $res .= "1. Confirm Order\n";
