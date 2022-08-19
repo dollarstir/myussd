@@ -98,27 +98,27 @@ class Menu
                     $productname = 'Pizza';
                     if ($size == 1) {
                         $productsize = 'Small';
-                        $productprice = 'GHS10';
+                        $productprice = 10;
                     } elseif ($size == 2) {
                         $productsize = 'Medium';
-                        $productprice = 'GHS20';
+                        $productprice = 20;
                     } elseif ($size == 3) {
                         $productsize = 'Large';
-                        $productprice = 'GHS40';
+                        $productprice = 40;
                     }
                     break;
 
                 case '2':
-                    $productname = 'Pepsi';
+                    $productname = 'Burger';
                     if ($size == 1) {
                         $productsize = 'Small';
-                        $productprice = 'GHS10';
+                        $productprice = 20;
                     } elseif ($size == 2) {
                         $productsize = 'Medium';
-                        $productprice = 'GHS20';
+                        $productprice = 40;
                     } elseif ($size == 3) {
                         $productsize = 'Large';
-                        $productprice = 'GHS40';
+                        $productprice = 50;
                     }
                     break;
 
@@ -128,7 +128,9 @@ class Menu
             }
 
             $quantity = $textlevel[4];
-            $res = 'You have ordered '.$quantity.' of '.$product."\n";
+            $totalprice = $productprice * $quantity;
+            $res = 'You have ordered '.$quantity.' of '.$productname."\n";
+            $res .= "totalprice = $totalprice \n ";
             $res .= "1. Confirm Order\n";
             $res .= "2. Back\n";
             echo 'CON '.$res;
