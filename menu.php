@@ -28,14 +28,15 @@ class Menu
                 $res = "Choose a product \n";
                 $res .= "1. Pizza\n";
                 $res .= "2. Burger\n";
-                $res .= "3. Back\n";
+                $res .= "3. Shawama\n";
+                $res .= "4. Back\n";
 
                 echo 'CON '.$res;
             } elseif ($category == 2) {
                 $res = "Choose a product \n";
                 $res .= "1. Coke\n";
                 $res .= "2. Pepsi\n";
-                $res .= "3. KFC\n";
+                $res .= "3. Beta Mult\n";
                 $res .= "4. Back\n";
 
                 echo 'CON '.$res;
@@ -105,7 +106,21 @@ class Menu
                         $productsize = 'Large';
                         $productprice = 'GHS40';
                     }
-                        break;
+                    break;
+
+                case '2':
+                    $productname = 'Pepsi';
+                    if ($size == 1) {
+                        $productsize = 'Small';
+                        $productprice = 'GHS10';
+                    } elseif ($size == 2) {
+                        $productsize = 'Medium';
+                        $productprice = 'GHS20';
+                    } elseif ($size == 3) {
+                        $productsize = 'Large';
+                        $productprice = 'GHS40';
+                    }
+                    break;
 
                 default:
                     // code...
