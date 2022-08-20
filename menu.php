@@ -34,19 +34,19 @@ class Menu
         } elseif ($level == 2) {
             $category = $textlevel[1];
             if ($category == 1) {
-                $res = "Choose Sub Category \n";
+                $res = "Choose Electronic Category \n";
                 $res .= "1. Televison\n";
                 $res .= "2. Computer & Accessories\n";
                 $res .= "3. Phones\n";
                 $res .= "4. Smart Watches\n";
-                $res .= "4. Back\n";
+                $res .= "5. Back\n";
 
                 echo 'CON '.$res;
             } elseif ($category == 2) {
-                $res = "Choose a product \n";
-                $res .= "1. Coke\n";
-                $res .= "2. Pepsi\n";
-                $res .= "3. Beta Mult\n";
+                $res = "Choose Grocery \n";
+                $res .= "1. Oil\n";
+                $res .= "2. Rice\n";
+                $res .= "3. Noodle \n";
                 $res .= "4. Back\n";
 
                 echo 'CON '.$res;
