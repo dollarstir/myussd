@@ -75,8 +75,8 @@ class Menu
             if ($category == 1 && $subcategory == 1) {
                 $res = "Choose a product \n";
                 $res .= "1. NASCO TV (GHS700) \n";
-                $res .= "2. BHR (GH20)\n";
-                $res .= "3. Large (GH40)\n";
+                $res .= "2. BRUHM TV (GH950)\n";
+                $res .= "3. PANASONIC TV (GH1000)\n";
                 $res .= "4. Back\n";
 
                 echo 'CON '.$res;
