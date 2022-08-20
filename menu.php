@@ -70,11 +70,12 @@ class Menu
                 return $this->mainmenu();
             }
         } elseif ($level == 3) {
+            $category = $textlevel[1];
             $subcategory = $textlevel[2];
-            if ($subcategory == 1) {
+            if ($category == 1 && $subcategory == 1) {
                 $res = "Choose a product \n";
-                $res .= "1. Small (GH10) \n";
-                $res .= "2. Medium (GH20)\n";
+                $res .= "1. NASCO TV (GHS700) \n";
+                $res .= "2. BHR (GH20)\n";
                 $res .= "3. Large (GH40)\n";
                 $res .= "4. Back\n";
 
