@@ -80,11 +80,11 @@ class Menu
                 $res .= "4. Back\n";
 
                 echo 'CON '.$res;
-            } elseif ($subcategory == 2) {
-                $res = "Choose a size \n";
-                $res .= "1. Small (GH20)\n";
-                $res .= "2. Medium (GH40)\n";
-                $res .= "3. Large (GH50)\n";
+            } elseif ($category == 1 && $subcategory == 2) {
+                $res = "Choose a product \n";
+                $res .= "1. iphone 13 Pro Max (GHS6000)\n";
+                $res .= "2. Hp Pavillion(GHS2500\n";
+                $res .= "3. Techno Sparks 4 (GHS700)\n";
                 $res .= "4. Back\n";
 
                 echo 'CON '.$res;
