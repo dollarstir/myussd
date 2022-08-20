@@ -34,7 +34,7 @@ class Menu
         } elseif ($level == 2) {
             $category = $textlevel[1];
             if ($category == 1) {
-                $res = "Choose Electronic Category \n";
+                $res = "Electronics \n";
                 $res .= "1. Televison\n";
                 $res .= "2. Computer & Accessories\n";
                 $res .= "3. Phones\n";
@@ -43,7 +43,7 @@ class Menu
 
                 echo 'CON '.$res;
             } elseif ($category == 2) {
-                $res = "Choose Grocery \n";
+                $res = "Grocery \n";
                 $res .= "1. Oil\n";
                 $res .= "2. Rice\n";
                 $res .= "3. Noodle \n";
@@ -59,11 +59,11 @@ class Menu
 
                 echo 'CON '.$res;
             } elseif ($category == 4) {
-                $res = "Health & Beauty \n";
-                $res .= "1. Makeup tools\n";
-                $res .= "2. Perfumes\n";
-                $res .= "3. Oral care\n";
-                $res .= "4. Back\n";
+                $res = "Fashion \n";
+                $res .= "1. Men Wear\n";
+                $res .= "2. Woman Wear\n";
+
+                $res .= "3. Back\n";
 
                 echo 'CON '.$res;
             } elseif ($category == 5) {
