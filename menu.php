@@ -82,17 +82,25 @@ class Menu
                 echo 'CON '.$res;
             } elseif ($category == 1 && $subcategory == 2) {
                 $res = "Choose a product \n";
-                $res .= "1. iphone 13 Pro Max (GHS6000)\n";
+                $res .= "1. Wireless keyboard (GHS40)\n";
                 $res .= "2. Hp Pavillion(GHS2500\n";
-                $res .= "3. Techno Sparks 4 (GHS700)\n";
+                $res .= "3. Dell XPS (GHS7000)\n";
                 $res .= "4. Back\n";
 
                 echo 'CON '.$res;
-            } elseif ($subcategory == 3) {
-                $res = "Choose a size \n";
-                $res .= "1. Small (GH30)\n";
-                $res .= "2. Medium (GH40)\n";
-                $res .= "3. Large (GH50)\n";
+            } elseif ($category == 1 && $subcategory == 3) {
+                $res = "Choose a product \n";
+                $res .= "1. Techo Spark 4 (GHS700)\n";
+                $res .= "2. Huawei Y Prime (GH1000)\n";
+                $res .= "3. Iphone 13 Pro Max (GH6500)\n";
+                $res .= "4. Back\n";
+
+                echo 'CON '.$res;
+            } elseif ($category == 1 && $subcategory == 4) {
+                $res = "Choose a product \n";
+                $res .= "1. Samsung Smart watch (GHS1200)\n";
+                $res .= "2. Apple series 3 Watch (GH1300)\n";
+                $res .= "3. Apple series 6 Watch (GH1600)\n";
                 $res .= "4. Back\n";
 
                 echo 'CON '.$res;
