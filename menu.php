@@ -2,6 +2,13 @@
 
 class Menu
 {
+    public $conn;
+
+    public function __construct()
+    {
+        $this->conn = mysqli_connect('localhost', 'root', '', 'myussd') or die('connection to database failed ');
+    }
+
     public function mainmenu()
     {
         $response = "Welcome to my shop  \n";
@@ -17,18 +24,21 @@ class Menu
         $level = count($textlevel);
         if ($level == 1) {
             $res = "Choose a category \n";
-            $res .= "1. Food\n";
-            $res .= "2. Drinks\n";
-            $res .= "3. Back\n";
+            $res .= "1. Electtronics\n";
+            $res .= "2. Grocery\n";
+            $res .= "3. Health & Beauty\n";
+            $res .= "4. Fashion\n";
+            $res .= "5. Back\n";
 
             echo 'CON '.$res;
         } elseif ($level == 2) {
             $category = $textlevel[1];
             if ($category == 1) {
-                $res = "Choose a product \n";
-                $res .= "1. Pizza\n";
-                $res .= "2. Burger\n";
-                $res .= "3. Shawama\n";
+                $res = "Choose Sub Category \n";
+                $res .= "1. Televison\n";
+                $res .= "2. Computer & Accessories\n";
+                $res .= "3. Phones\n";
+                $res .= "4. Smart Watches\n";
                 $res .= "4. Back\n";
 
                 echo 'CON '.$res;
@@ -177,6 +187,9 @@ class Menu
 
                 $quantity = $textlevel[4];
                 $totalprice = $productprice * $quantity;
+
+                $orderid = rand('111111', '999999');
+
                 $res = "Order confirmed item will be deliverd to $phoneNumber \n";
 
                 echo 'END '.$res;
