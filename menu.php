@@ -51,19 +51,35 @@ class Menu
 
                 echo 'CON '.$res;
             } elseif ($category == 3) {
+                $res = "Health & Beauty \n";
+                $res .= "1. Makeup tools\n";
+                $res .= "2. Perfumes\n";
+                $res .= "3. Oral care\n";
+                $res .= "4. Back\n";
+
+                echo 'CON '.$res;
+            } elseif ($category == 4) {
+                $res = "Health & Beauty \n";
+                $res .= "1. Makeup tools\n";
+                $res .= "2. Perfumes\n";
+                $res .= "3. Oral care\n";
+                $res .= "4. Back\n";
+
+                echo 'CON '.$res;
+            } elseif ($category == 5) {
                 return $this->mainmenu();
             }
         } elseif ($level == 3) {
-            $product = $textlevel[2];
-            if ($product == 1) {
-                $res = "Choose a size \n";
+            $subcategory = $textlevel[2];
+            if ($subcategory == 1) {
+                $res = "Choose a product \n";
                 $res .= "1. Small (GH10) \n";
                 $res .= "2. Medium (GH20)\n";
                 $res .= "3. Large (GH40)\n";
                 $res .= "4. Back\n";
 
                 echo 'CON '.$res;
-            } elseif ($product == 2) {
+            } elseif ($subcategory == 2) {
                 $res = "Choose a size \n";
                 $res .= "1. Small (GH20)\n";
                 $res .= "2. Medium (GH40)\n";
@@ -71,7 +87,7 @@ class Menu
                 $res .= "4. Back\n";
 
                 echo 'CON '.$res;
-            } elseif ($product == 3) {
+            } elseif ($subcategory == 3) {
                 $res = "Choose a size \n";
                 $res .= "1. Small (GH30)\n";
                 $res .= "2. Medium (GH40)\n";
@@ -79,7 +95,7 @@ class Menu
                 $res .= "4. Back\n";
 
                 echo 'CON '.$res;
-            } elseif ($product == 4) {
+            } elseif ($subcategory == 4) {
                 return $this->category($textlevel, $phoneNumber);
             }
         } elseif ($level == 4) {
