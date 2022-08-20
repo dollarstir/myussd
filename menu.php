@@ -83,7 +83,7 @@ class Menu
             } elseif ($category == 1 && $subcategory == 2) {
                 $res = "Choose a product \n";
                 $res .= "1. Wireless keyboard (GHS40)\n";
-                $res .= "2. Hp Pavillion(GHS2500\n";
+                $res .= "2. Hp Pavillion(GHS2500)\n";
                 $res .= "3. Dell XPS (GHS7000)\n";
                 $res .= "4. Back\n";
 
