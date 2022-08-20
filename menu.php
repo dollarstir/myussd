@@ -6,7 +6,7 @@ class Menu
 
     public function __construct()
     {
-        $this->conn = mysqli_connect('localhost', 'root', '', 'myussd') or die('connection to database failed ');
+        // $this->conn = mysqli_connect('localhost', 'root', '', 'myussd') or die('connection to database failed ');
     }
 
     public function mainmenu()
