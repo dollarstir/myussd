@@ -231,7 +231,7 @@ class Menu
                 $orderid = rand('111111', '999999');
 
                 $res = "Order confirmed item will be deliverd to $phoneNumber \n";
-                $res .= 'Order No :'.$orderid." \n";
+                $res .= "Order No :.$orderid. \n";
 
                 echo 'END '.$res;
             } elseif ($comfirm == 2) {
