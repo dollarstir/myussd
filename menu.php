@@ -286,12 +286,12 @@ class Menu
 
                             break;
                         case 2:
-                            $_SESSION['itemname'] = 'Huawei Y Prime (GH1000)';
-                            $_SESSION['itemprice'] = 1000;
+                            $_SESSION['itemname'] = 'Enapa Spaghetti (GHS3)';
+                            $_SESSION['itemprice'] = 3;
                             break;
                         case 3:
-                            $_SESSION['itemname'] = 'Iphone 13 Pro Max (GH6500)';
-                            $_SESSION['itemprice'] = 6500;
+                            $_SESSION['itemname'] = 'Indomine (GHS4)';
+                            $_SESSION['itemprice'] = 4;
                             break;
                         default:
 
