@@ -271,8 +271,8 @@ class Menu
                             $_SESSION['itemprice'] = 36;
                             break;
                         case 3:
-                            $_SESSION['itemname'] = 'Dell XPS (GHS7000)';
-                            $_SESSION['itemprice'] = 7000;
+                            $_SESSION['itemname'] = 'Jasmine (GHS45)';
+                            $_SESSION['itemprice'] = 45;
                             break;
                         default:
                             // code...
