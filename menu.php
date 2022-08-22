@@ -25,7 +25,7 @@ class Menu
         $level = count($textlevel);
         if ($level == 1) {
             $res = "Choose a category \n";
-            $res .= "1. Electtronics\n";
+            $res .= "1. Electronics\n";
             $res .= "2. Grocery\n";
             $res .= "3. Health & Beauty\n";
             $res .= "4. Fashion\n";
