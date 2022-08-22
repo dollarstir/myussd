@@ -123,9 +123,9 @@ class Menu
                 echo 'CON '.$res;
             } elseif ($category == 2 && $subcategory == 3) {
                 $res = "Choose a product \n";
-                $res .= "1. Royal Fist (GHS30)\n";
-                $res .= "2. Royal Aroma (GHS36)\n";
-                $res .= "3. Jasmine (GHS45)\n";
+                $res .= "1. Oba Spaghetti(GHS2)\n";
+                $res .= "2. Enapa Spaghetti (GHS3)\n";
+                $res .= "3.  Indomine (GHS4)\n";
                 $res .= "4. Back\n";
 
                 echo 'CON '.$res;
@@ -237,22 +237,23 @@ class Menu
                             break;
                     }
                 }
+                // CATEGORY 2
             } elseif ($category == 2) {
                 if ($subcategory == 1) {
                     switch ($product) {
                         case 1:
-                            $_SESSION['itemname'] = 'Nasco TV (GHS700)';
-                            $_SESSION['itemprice'] = 700;
+                            $_SESSION['itemname'] = 'Frytol (GHS27)';
+                            $_SESSION['itemprice'] = 27;
 
                             break;
                         case 2:
-                            $_SESSION['itemname'] = 'BRUHM TV (GH950)';
-                            $_SESSION['itemprice'] = 950;
+                            $_SESSION['itemname'] = 'Bolgies (GHS32)';
+                            $_SESSION['itemprice'] = 32;
 
                             break;
                         case 3:
-                            $_SESSION['itemname'] = 'PANASONIC TV (GH1000)';
-                            $_SESSION['itemprice'] = 1000;
+                            $_SESSION['itemname'] = 'Olive (GHS34)';
+                            $_SESSION['itemprice'] = 34;
                             break;
                         default:
                             // code...
