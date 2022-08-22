@@ -73,7 +73,7 @@ class Menu
             } elseif ($category == 5) {
                 $level = 1;
 
-                echo $level;
+                echo 'END '.$level;
             }
         }
 
