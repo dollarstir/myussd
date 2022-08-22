@@ -385,14 +385,10 @@ class Menu
         } elseif ($level == 6) {
             $comfirm = $textlevel[5];
             if ($comfirm == 1) {
-                // $_SESSION['quantity'] = $textlevel[4];
-                // $_SESSION['totalprice'] = $_SESSION['itemprice'] * $_SESSION['quantity'];
-
                 $orderid = rand('111111', '999999');
 
                 $res = "Order confirmed item will be deliverd to $phoneNumber \n";
                 $res .= "Order No :$orderid. \n";
-                // session_destroy();
 
                 echo 'END '.$res;
             } elseif ($comfirm == 2) {
