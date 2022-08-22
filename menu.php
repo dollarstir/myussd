@@ -184,8 +184,28 @@ class Menu
 
                             break;
                         case 3:
-                            $productname = 'Dell XPS (GHS7000)';
-                            $productprice = 7000;
+                            $productname = 'Iphone 13 Pro Max (GH6500)';
+                            $productprice = 6500;
+                            break;
+                        default:
+                            // code...
+                            break;
+                    }
+                } elseif ($subcategory == 4) {
+                    switch ($product) {
+                        case 1:
+                            $productname = 'Techo Spark 4 (GHS700)';
+                            $productprice = 700;
+
+                            break;
+                        case 2:
+                            $productname = 'Huawei Y Prime (GH1000)';
+                            $productprice = 1000;
+
+                            break;
+                        case 3:
+                            $productname = 'Iphone 13 Pro Max (GH6500)';
+                            $productprice = 6500;
                             break;
                         default:
                             // code...
