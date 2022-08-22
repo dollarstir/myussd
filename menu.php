@@ -19,10 +19,11 @@ class Menu
         return $response;
     }
 
-    public function category($textlevel, $phoneNumber)
+    public function shopping($textlevel, $phoneNumber)
     {
         session_start();
         $level = count($textlevel);
+        // displaying Main Category***********************************************************
         if ($level == 1) {
             $res = "Choose a category \n";
             $res .= "1. Electronics\n";
@@ -32,7 +33,9 @@ class Menu
             $res .= "5. Back\n";
 
             echo 'CON '.$res;
-        } elseif ($level == 2) {
+        }
+        // displaying Sub Categories********************************************************
+        elseif ($level == 2) {
             $category = $textlevel[1];
             if ($category == 1) {
                 $res = "Electronics \n";
@@ -70,7 +73,10 @@ class Menu
             } elseif ($category == 5) {
                 return $this->mainmenu();
             }
-        } elseif ($level == 3) {
+        }
+
+        // Checking users Sub Category & Product under each category***********************************************************
+        elseif ($level == 3) {
             $category = $textlevel[1];
             $subcategory = $textlevel[2];
             if ($category == 1 && $subcategory == 1) {
@@ -130,9 +136,11 @@ class Menu
 
                 echo 'CON '.$res;
             } elseif ($subcategory == 4) {
-                return $this->category($textlevel, $phoneNumber);
+                return $this->shopping($textlevel, $phoneNumber);
             }
-        } elseif ($level == 4) {
+        }
+        // taking the product Quantity from user   ***************************************************************
+        elseif ($level == 4) {
             $size = $textlevel[3];
             if ($size == 1) {
                 $res = "Enter Quantity \n";
@@ -147,7 +155,7 @@ class Menu
 
                 echo 'CON '.$res;
             } elseif ($size == 4) {
-                return $this->category($textlevel, $phoneNumber);
+                return $this->shopping($textlevel, $phoneNumber);
             }
         } elseif ($level == 5) {
             $category = $textlevel[1];
@@ -155,6 +163,8 @@ class Menu
             $product = $textlevel[3];
             $_SESSION['itemprice'] = 0;
             $_SESSION['itemname'] = '';
+            // Category 1*******************************************************************************************
+
             if ($category == 1) {
                 if ($subcategory == 1) {
                     switch ($product) {
@@ -386,7 +396,7 @@ class Menu
 
                 echo 'END '.$res;
             } elseif ($comfirm == 2) {
-                return $this->category($textlevel, $phoneNumber);
+                return $this->shopping($textlevel, $phoneNumber);
             }
         }
     }
