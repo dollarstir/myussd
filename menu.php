@@ -71,7 +71,7 @@ class Menu
 
                 echo 'CON '.$res;
             } elseif ($category == 5) {
-                $level == 1;
+                $level = 1;
                 $res = "Choose a category \n";
                 $res .= "1. Electronics\n";
                 $res .= "2. Grocery\n";
