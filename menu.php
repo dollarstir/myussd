@@ -100,16 +100,32 @@ class Menu
             } elseif ($category == 1 && $subcategory == 4) {
                 $res = "Choose a product \n";
                 $res .= "1. Samsung Smart watch (GHS1200)\n";
-                $res .= "2. Apple series 3 Watch (GH1300)\n";
-                $res .= "3. Apple series 6 Watch (GH1600)\n";
+                $res .= "2. Apple series 3 Watch (GHS1300)\n";
+                $res .= "3. Apple series 6 Watch (GHS1600)\n";
                 $res .= "4. Back\n";
 
                 echo 'CON '.$res;
             } elseif ($category == 2 && $subcategory == 1) {
                 $res = "Choose a product \n";
-                $res .= "1. Samsung Smart watch (GHS1200)\n";
-                $res .= "2. Apple series 3 Watch (GH1300)\n";
-                $res .= "3. Apple series 6 Watch (GH1600)\n";
+                $res .= "1. Frytol (GHS27)\n";
+                $res .= "2. Bolgies (GHS32)\n";
+                $res .= "3. Olive (GHS34)\n";
+                $res .= "4. Back\n";
+
+                echo 'CON '.$res;
+            } elseif ($category == 2 && $subcategory == 2) {
+                $res = "Choose a product \n";
+                $res .= "1. Royal Fist (GHS30)\n";
+                $res .= "2. Royal Aroma (GHS36)\n";
+                $res .= "3. Jasmine (GHS45)\n";
+                $res .= "4. Back\n";
+
+                echo 'CON '.$res;
+            } elseif ($category == 2 && $subcategory == 3) {
+                $res = "Choose a product \n";
+                $res .= "1. Royal Fist (GHS30)\n";
+                $res .= "2. Royal Aroma (GHS36)\n";
+                $res .= "3. Jasmine (GHS45)\n";
                 $res .= "4. Back\n";
 
                 echo 'CON '.$res;
