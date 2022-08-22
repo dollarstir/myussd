@@ -232,6 +232,7 @@ class Menu
 
                 $res = "Order confirmed item will be deliverd to $phoneNumber \n";
                 // $res .= "Order No :.$orderid. \n";
+                session_destroy();
 
                 echo 'END '.$res;
             } elseif ($comfirm == 2) {
