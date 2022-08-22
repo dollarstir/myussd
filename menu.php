@@ -72,8 +72,6 @@ class Menu
                 echo 'CON '.$res;
             } elseif ($category == 5) {
                 $level = 1;
-
-                return $this;
             }
         }
 
