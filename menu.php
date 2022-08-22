@@ -237,8 +237,9 @@ class Menu
                             break;
                     }
                 }
-                // CATEGORY 2
-            } elseif ($category == 2) {
+            }
+            // Category 2*********************************************************************************************
+            elseif ($category == 2) {
                 if ($subcategory == 1) {
                     switch ($product) {
                         case 1:
@@ -299,6 +300,70 @@ class Menu
                     }
                 }
             }
+            // CATEGORY 3*********************************************************************************************
+
+            elseif ($category == 2) {
+                if ($subcategory == 1) {
+                    switch ($product) {
+                        case 1:
+                            $_SESSION['itemname'] = 'Frytol (GHS27)';
+                            $_SESSION['itemprice'] = 27;
+
+                            break;
+                        case 2:
+                            $_SESSION['itemname'] = 'Bolgies (GHS32)';
+                            $_SESSION['itemprice'] = 32;
+
+                            break;
+                        case 3:
+                            $_SESSION['itemname'] = 'Olive (GHS34)';
+                            $_SESSION['itemprice'] = 34;
+                            break;
+                        default:
+                            // code...
+                            break;
+                    }
+                } elseif ($subcategory == 2) {
+                    switch ($product) {
+                        case 1:
+                            $_SESSION['itemname'] = 'Royal Fist (GHS30)';
+                            $_SESSION['itemprice'] = 30;
+
+                            break;
+                        case 2:
+                            $_SESSION['itemname'] = 'Royal Aroma (GHS36)';
+                            $_SESSION['itemprice'] = 36;
+                            break;
+                        case 3:
+                            $_SESSION['itemname'] = 'Jasmine (GHS45)';
+                            $_SESSION['itemprice'] = 45;
+                            break;
+                        default:
+                            // code...
+                            break;
+                    }
+                } elseif ($subcategory == 3) {
+                    switch ($product) {
+                        case 1:
+                            $_SESSION['itemname'] = 'Oba Spaghetti(GHS2)';
+                            $_SESSION['itemprice'] = 2;
+
+                            break;
+                        case 2:
+                            $_SESSION['itemname'] = 'Enapa Spaghetti (GHS3)';
+                            $_SESSION['itemprice'] = 3;
+                            break;
+                        case 3:
+                            $_SESSION['itemname'] = 'Indomine (GHS4)';
+                            $_SESSION['itemprice'] = 4;
+                            break;
+                        default:
+
+                            break;
+                    }
+                }
+            }
+
             $_SESSION['quantity'] = $textlevel[4];
             $_SESSION['totalprice'] = $_SESSION['itemprice'] * $_SESSION['quantity'];
             $res = 'You have ordered '.$_SESSION['quantity'].' of '.$_SESSION['itemname']."\n";
