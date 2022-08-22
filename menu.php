@@ -128,17 +128,45 @@ class Menu
             $category = $textlevel[1];
             $subcategory = $textlevel[2];
             $product = $textlevel[3];
+            $productprice = 0;
+            $productname = '';
             if ($category == 1) {
                 if ($subcategory == 1) {
                     switch ($product) {
                         case 1:
                             $productname = 'NASCO TV (GHS700)';
-                            $produnctprice = 700;
+                            $productprice = 700;
 
                             break;
                         case 2:
-                            break;
+                            $productname = 'BRUHM TV (GH950)';
+                            $productprice = 950;
 
+                            break;
+                        case 3:
+                            $productname = 'PANASONIC TV (GH1000)';
+                            $productprice = 1000;
+                            break;
+                        default:
+                            // code...
+                            break;
+                    }
+                } elseif ($subcategory == 2) {
+                    switch ($product) {
+                        case 1:
+                            $productname = 'Wireless keyboard (GHS40)';
+                            $productprice = 40;
+
+                            break;
+                        case 2:
+                            $productname = 'BRUHM TV (GH950)';
+                            $productprice = 950;
+
+                            break;
+                        case 3:
+                            $productname = 'PANASONIC TV (GH1000)';
+                            $productprice = 1000;
+                            break;
                         default:
                             // code...
                             break;
