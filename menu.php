@@ -11,7 +11,7 @@ class Menu
 
     public function mainmenu()
     {
-        $response = "Welcome to my shop  \n";
+        $response = "Welcome to AV Enterprise  \n";
         $response .= "1. Products\n";
         $response .= "2. Orders \n ";
         $response .= "3. About Us \n";
@@ -145,9 +145,9 @@ class Menu
                 echo 'CON '.$res;
             } elseif ($category == 3 && $subcategory == 2) {
                 $res = "Choose a product \n";
-                $res .= "1. Royal Fist (GHS30)\n";
-                $res .= "2. Royal Aroma (GHS36)\n";
-                $res .= "3. Jasmine (GHS45)\n";
+                $res .= "1. Color Me (GHS15)\n";
+                $res .= "2. MJ Code (GHS60)\n";
+                $res .= "3. Brown Orchide (GHS100)\n";
                 $res .= "4. Back\n";
 
                 echo 'CON '.$res;
