@@ -388,8 +388,8 @@ class Menu
                             $_SESSION['itemprice'] = 10;
                             break;
                         case 3:
-                            $_SESSION['itemname'] = 'Indomine (GHS4)';
-                            $_SESSION['itemprice'] = 4;
+                            $_SESSION['itemname'] = 'Teeth whiteners (GHS100)';
+                            $_SESSION['itemprice'] = 100;
                             break;
                         default:
 
