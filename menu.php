@@ -21,6 +21,7 @@ class Menu
 
     public function category($textlevel, $phoneNumber)
     {
+        session_start();
         $level = count($textlevel);
         if ($level == 1) {
             $res = "Choose a category \n";
@@ -128,24 +129,24 @@ class Menu
             $category = $textlevel[1];
             $subcategory = $textlevel[2];
             $product = $textlevel[3];
-            $productprice = 0;
-            $productname = '';
+            $_SESSION['itemprice'] = 0;
+            $_SESSION['itemname'] = '';
             if ($category == 1) {
                 if ($subcategory == 1) {
                     switch ($product) {
                         case 1:
-                            $productname = 'NASCO TV (GHS700)';
-                            $productprice = 700;
+                            $_SESSION['itemname'] = 'NASCO TV (GHS700)';
+                            $_SESSION['itemprice'] = 700;
 
                             break;
                         case 2:
-                            $productname = 'BRUHM TV (GH950)';
-                            $productprice = 950;
+                            $_SESSION['itemname'] = 'BRUHM TV (GH950)';
+                            $_SESSION['itemprice'] = 950;
 
                             break;
                         case 3:
-                            $productname = 'PANASONIC TV (GH1000)';
-                            $productprice = 1000;
+                            $_SESSION['itemname'] = 'PANASONIC TV (GH1000)';
+                            $_SESSION['itemprice'] = 1000;
                             break;
                         default:
                             // code...
@@ -154,18 +155,18 @@ class Menu
                 } elseif ($subcategory == 2) {
                     switch ($product) {
                         case 1:
-                            $productname = 'Wireless keyboard (GHS40)';
-                            $productprice = 40;
+                            $_SESSION['itemname'] = 'Wireless keyboard (GHS40)';
+                            $_SESSION['itemprice'] = 40;
 
                             break;
                         case 2:
-                            $productname = 'Hp Pavillion(GHS2500)';
-                            $productprice = 2500;
+                            $_SESSION['itemname'] = 'Hp Pavillion(GHS2500)';
+                            $_SESSION['itemprice'] = 2500;
 
                             break;
                         case 3:
-                            $productname = 'Dell XPS (GHS7000)';
-                            $productprice = 7000;
+                            $_SESSION['itemname'] = 'Dell XPS (GHS7000)';
+                            $_SESSION['itemprice'] = 7000;
                             break;
                         default:
                             // code...
@@ -174,18 +175,18 @@ class Menu
                 } elseif ($subcategory == 3) {
                     switch ($product) {
                         case 1:
-                            $productname = 'Techo Spark 4 (GHS700)';
-                            $productprice = 700;
+                            $_SESSION['itemname'] = 'Techo Spark 4 (GHS700)';
+                            $_SESSION['itemprice'] = 700;
 
                             break;
                         case 2:
-                            $productname = 'Huawei Y Prime (GH1000)';
-                            $productprice = 1000;
+                            $_SESSION['itemname'] = 'Huawei Y Prime (GH1000)';
+                            $_SESSION['itemprice'] = 1000;
 
                             break;
                         case 3:
-                            $productname = 'Iphone 13 Pro Max (GH6500)';
-                            $productprice = 6500;
+                            $_SESSION['itemname'] = 'Iphone 13 Pro Max (GH6500)';
+                            $_SESSION['itemprice'] = 6500;
                             break;
                         default:
                             // code...
@@ -194,18 +195,18 @@ class Menu
                 } elseif ($subcategory == 4) {
                     switch ($product) {
                         case 1:
-                            $productname = 'Techo Spark 4 (GHS700)';
-                            $productprice = 700;
+                            $_SESSION['itemname'] = 'Samsung Smart watch (GHS1200)';
+                            $_SESSION['itemprice'] = 1200;
 
                             break;
                         case 2:
-                            $productname = 'Huawei Y Prime (GH1000)';
-                            $productprice = 1000;
+                            $_SESSION['itemname'] = 'Apple series 3 Watch (GH1300)';
+                            $_SESSION['itemprice'] = 1300;
 
                             break;
                         case 3:
-                            $productname = 'Iphone 13 Pro Max (GH6500)';
-                            $productprice = 6500;
+                            $_SESSION['itemname'] = 'Apple series 6 Watch (GH1600)';
+                            $_SESSION['itemprice'] = 1600;
                             break;
                         default:
                             // code...
@@ -213,60 +214,24 @@ class Menu
                     }
                 }
             }
-            $quantity = $textlevel[4];
-            $totalprice = $productprice * $quantity;
-            $res = 'You have ordered '.$quantity.' of '.$productname."\n";
-            $res .= "Unit Price = $productprice \n ";
-            $res .= "Total Price = $totalprice \n ";
+            $_SESSION['quantity'] = $textlevel[4];
+            $_SESSION['totalprice'] = $_SESSION['itemprice'] * $_SESSION['quantity'];
+            $res = 'You have ordered '.$_SESSION['quantity'].' of '.$_SESSION['itemname']."\n";
+            $res .= 'Unit Price = '.$_SESSION['itemprice']." \n ";
+            $res .= 'Total Price = '.$_SESSION['totalprice']." \n ";
             $res .= "1. Confirm Order\n";
             $res .= "2. Back\n";
             echo 'CON '.$res;
         } elseif ($level == 6) {
             $comfirm = $textlevel[5];
             if ($comfirm == 1) {
-                $product = $textlevel[2];
-                $size = $textlevel[3];
-
-                switch ($product) {
-                case '1':
-                    $productname = 'Pizza';
-                    if ($size == 1) {
-                        $productsize = 'Small';
-                        $productprice = 10;
-                    } elseif ($size == 2) {
-                        $productsize = 'Medium';
-                        $productprice = 20;
-                    } elseif ($size == 3) {
-                        $productsize = 'Large';
-                        $productprice = 40;
-                    }
-                    break;
-
-                case '2':
-                    $productname = 'Burger';
-                    if ($size == 1) {
-                        $productsize = 'Small';
-                        $productprice = 20;
-                    } elseif ($size == 2) {
-                        $productsize = 'Medium';
-                        $productprice = 40;
-                    } elseif ($size == 3) {
-                        $productsize = 'Large';
-                        $productprice = 50;
-                    }
-                    break;
-
-                default:
-                    // code...
-                    break;
-            }
-
-                $quantity = $textlevel[4];
-                $totalprice = $productprice * $quantity;
+                $_SESSION['quantity'] = $textlevel[4];
+                $_SESSION['totalprice'] = $_SESSION['itemprice'] * $_SESSION['quantity'];
 
                 $orderid = rand('111111', '999999');
 
                 $res = "Order confirmed item will be deliverd to $phoneNumber \n";
+                $res .= 'Order No :'.$orderid." \n";
 
                 echo 'END '.$res;
             } elseif ($comfirm == 2) {
