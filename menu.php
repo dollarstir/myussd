@@ -71,7 +71,7 @@ class Menu
 
                 echo 'CON '.$res;
             } elseif ($category == 5) {
-                return $this->mainmenu();
+                $level == 1;
             }
         }
 
@@ -159,7 +159,7 @@ class Menu
                 $res .= "4. Back\n";
 
                 echo 'CON '.$res;
-            } elseif ($category == 5) {
+            } elseif ($subcategory == 4) {
                 $level == 1;
             }
         }
