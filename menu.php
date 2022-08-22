@@ -153,9 +153,9 @@ class Menu
                 echo 'CON '.$res;
             } elseif ($category == 3 && $subcategory == 3) {
                 $res = "Choose a product \n";
-                $res .= "1. Oba Spaghetti(GHS2)\n";
-                $res .= "2. Enapa Spaghetti (GHS3)\n";
-                $res .= "3.  Indomine (GHS4)\n";
+                $res .= "1. Mouthwash(GHS5)\n";
+                $res .= "2. Colgate charcol (GHS10)\n";
+                $res .= "3.  Teeth whiteners (GHS100)\n";
                 $res .= "4. Back\n";
 
                 echo 'CON '.$res;
