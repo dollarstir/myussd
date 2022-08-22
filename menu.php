@@ -43,7 +43,7 @@ class Menu
                 $res .= "2. Computer & Accessories\n";
                 $res .= "3. Phones\n";
                 $res .= "4. Smart Watches\n";
-                $res .= "4. Back\n";
+                $res .= "5. Back\n";
 
                 echo 'CON '.$res;
             } elseif ($category == 2) {
@@ -160,7 +160,7 @@ class Menu
 
                 echo 'CON '.$res;
             } elseif ($subcategory == 4) {
-                return $this->shopping($textlevel, $phoneNumber);
+                $level == 1;
             }
         }
         // taking the product Quantity from user   ***************************************************************
