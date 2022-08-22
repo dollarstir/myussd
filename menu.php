@@ -135,6 +135,30 @@ class Menu
                 $res .= "4. Back\n";
 
                 echo 'CON '.$res;
+            } elseif ($category == 3 && $subcategory == 1) {
+                $res = "Choose a product \n";
+                $res .= "1. Eye Lashes (GHS10)\n";
+                $res .= "2. Nails (GHS30)\n";
+                $res .= "3. Brush (GHS34)\n";
+                $res .= "4. Back\n";
+
+                echo 'CON '.$res;
+            } elseif ($category == 3 && $subcategory == 2) {
+                $res = "Choose a product \n";
+                $res .= "1. Royal Fist (GHS30)\n";
+                $res .= "2. Royal Aroma (GHS36)\n";
+                $res .= "3. Jasmine (GHS45)\n";
+                $res .= "4. Back\n";
+
+                echo 'CON '.$res;
+            } elseif ($category == 3 && $subcategory == 3) {
+                $res = "Choose a product \n";
+                $res .= "1. Oba Spaghetti(GHS2)\n";
+                $res .= "2. Enapa Spaghetti (GHS3)\n";
+                $res .= "3.  Indomine (GHS4)\n";
+                $res .= "4. Back\n";
+
+                echo 'CON '.$res;
             } elseif ($subcategory == 4) {
                 return $this->shopping($textlevel, $phoneNumber);
             }
