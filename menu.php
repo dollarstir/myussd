@@ -105,6 +105,14 @@ class Menu
                 $res .= "4. Back\n";
 
                 echo 'CON '.$res;
+            } elseif ($category == 2 && $subcategory == 1) {
+                $res = "Choose a product \n";
+                $res .= "1. Samsung Smart watch (GHS1200)\n";
+                $res .= "2. Apple series 3 Watch (GH1300)\n";
+                $res .= "3. Apple series 6 Watch (GH1600)\n";
+                $res .= "4. Back\n";
+
+                echo 'CON '.$res;
             } elseif ($subcategory == 4) {
                 return $this->category($textlevel, $phoneNumber);
             }
@@ -213,6 +221,66 @@ class Menu
                             break;
                     }
                 }
+            } elseif ($category == 2) {
+                if ($subcategory == 1) {
+                    switch ($product) {
+                        case 1:
+                            $_SESSION['itemname'] = 'Nasco TV (GHS700)';
+                            $_SESSION['itemprice'] = 700;
+
+                            break;
+                        case 2:
+                            $_SESSION['itemname'] = 'BRUHM TV (GH950)';
+                            $_SESSION['itemprice'] = 950;
+
+                            break;
+                        case 3:
+                            $_SESSION['itemname'] = 'PANASONIC TV (GH1000)';
+                            $_SESSION['itemprice'] = 1000;
+                            break;
+                        default:
+                            // code...
+                            break;
+                    }
+                } elseif ($subcategory == 2) {
+                    switch ($product) {
+                        case 1:
+                            $_SESSION['itemname'] = 'Wireless keyboard (GHS40)';
+                            $_SESSION['itemprice'] = 40;
+
+                            break;
+                        case 2:
+                            $_SESSION['itemname'] = 'Hp Pavillion(GHS2500)';
+                            $_SESSION['itemprice'] = 2500;
+                            break;
+                        case 3:
+                            $_SESSION['itemname'] = 'Dell XPS (GHS7000)';
+                            $_SESSION['itemprice'] = 7000;
+                            break;
+                        default:
+                            // code...
+                            break;
+                    }
+                } elseif ($subcategory == 3) {
+                    switch ($product) {
+                        case 1:
+                            $_SESSION['itemname'] = 'Techo Spark 4 (GHS700)';
+                            $_SESSION['itemprice'] = 700;
+
+                            break;
+                        case 2:
+                            $_SESSION['itemname'] = 'Huawei Y Prime (GH1000)';
+                            $_SESSION['itemprice'] = 1000;
+                            break;
+                        case 3:
+                            $_SESSION['itemname'] = 'Iphone 13 Pro Max (GH6500)';
+                            $_SESSION['itemprice'] = 6500;
+                            break;
+                        default:
+
+                            break;
+                    }
+                }
             }
             $_SESSION['quantity'] = $textlevel[4];
             $_SESSION['totalprice'] = $_SESSION['itemprice'] * $_SESSION['quantity'];
@@ -231,7 +299,7 @@ class Menu
                 $orderid = rand('111111', '999999');
 
                 $res = "Order confirmed item will be deliverd to $phoneNumber \n";
-                $res .= "Order No :.$orderid. \n";
+                $res .= "Order No :$orderid. \n";
                 // session_destroy();
 
                 echo 'END '.$res;
