@@ -396,7 +396,7 @@ class Menu
 
                 echo 'END '.$res;
             } elseif ($comfirm == 2) {
-                return $this->shopping($textlevel, $phoneNumber);
+                echo $this->shopping($textlevel, $phoneNumber);
             }
         }
     }
