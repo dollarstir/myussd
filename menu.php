@@ -379,13 +379,13 @@ class Menu
                 } elseif ($subcategory == 3) {
                     switch ($product) {
                         case 1:
-                            $_SESSION['itemname'] = 'Oba Spaghetti(GHS2)';
-                            $_SESSION['itemprice'] = 2;
+                            $_SESSION['itemname'] = 'Mouthwash(GHS5)';
+                            $_SESSION['itemprice'] = 5;
 
                             break;
                         case 2:
-                            $_SESSION['itemname'] = 'Enapa Spaghetti (GHS3)';
-                            $_SESSION['itemprice'] = 3;
+                            $_SESSION['itemname'] = 'Colgate charcol (GHS10)';
+                            $_SESSION['itemprice'] = 10;
                             break;
                         case 3:
                             $_SESSION['itemname'] = 'Indomine (GHS4)';
