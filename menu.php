@@ -159,7 +159,7 @@ class Menu
                 $res .= "4. Back\n";
 
                 echo 'CON '.$res;
-            } elseif ($category == 4) {
+            } elseif ($category == 5) {
                 $level == 1;
             }
         }
