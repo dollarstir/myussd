@@ -281,8 +281,8 @@ class Menu
                 } elseif ($subcategory == 3) {
                     switch ($product) {
                         case 1:
-                            $_SESSION['itemname'] = 'Techo Spark 4 (GHS700)';
-                            $_SESSION['itemprice'] = 700;
+                            $_SESSION['itemname'] = 'Oba Spaghetti(GHS2)';
+                            $_SESSION['itemprice'] = 2;
 
                             break;
                         case 2:
