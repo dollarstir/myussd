@@ -336,21 +336,21 @@ class Menu
             }
             // CATEGORY 3*********************************************************************************************
 
-            elseif ($category == 2) {
+            elseif ($category == 3) {
                 if ($subcategory == 1) {
                     switch ($product) {
                         case 1:
-                            $_SESSION['itemname'] = 'Frytol (GHS27)';
-                            $_SESSION['itemprice'] = 27;
+                            $_SESSION['itemname'] = 'Eye Lashes (GHS10)';
+                            $_SESSION['itemprice'] = 10;
 
                             break;
                         case 2:
-                            $_SESSION['itemname'] = 'Bolgies (GHS32)';
-                            $_SESSION['itemprice'] = 32;
+                            $_SESSION['itemname'] = 'Nails (GHS30)';
+                            $_SESSION['itemprice'] = 30;
 
                             break;
                         case 3:
-                            $_SESSION['itemname'] = 'Olive (GHS34)';
+                            $_SESSION['itemname'] = 'Brush (GHS34)';
                             $_SESSION['itemprice'] = 34;
                             break;
                         default:
@@ -360,17 +360,17 @@ class Menu
                 } elseif ($subcategory == 2) {
                     switch ($product) {
                         case 1:
-                            $_SESSION['itemname'] = 'Royal Fist (GHS30)';
-                            $_SESSION['itemprice'] = 30;
+                            $_SESSION['itemname'] = 'Color Me (GHS15)';
+                            $_SESSION['itemprice'] = 15;
 
                             break;
                         case 2:
-                            $_SESSION['itemname'] = 'Royal Aroma (GHS36)';
-                            $_SESSION['itemprice'] = 36;
+                            $_SESSION['itemname'] = 'MJ Code (GHS60)';
+                            $_SESSION['itemprice'] = 60;
                             break;
                         case 3:
-                            $_SESSION['itemname'] = 'Jasmine (GHS45)';
-                            $_SESSION['itemprice'] = 45;
+                            $_SESSION['itemname'] = 'Brown Orchide (GHS100)';
+                            $_SESSION['itemprice'] = 100;
                             break;
                         default:
                             // code...
