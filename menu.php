@@ -262,13 +262,13 @@ class Menu
                 } elseif ($subcategory == 2) {
                     switch ($product) {
                         case 1:
-                            $_SESSION['itemname'] = 'Wireless keyboard (GHS40)';
-                            $_SESSION['itemprice'] = 40;
+                            $_SESSION['itemname'] = 'Royal Fist (GHS30)';
+                            $_SESSION['itemprice'] = 30;
 
                             break;
                         case 2:
-                            $_SESSION['itemname'] = 'Hp Pavillion(GHS2500)';
-                            $_SESSION['itemprice'] = 2500;
+                            $_SESSION['itemname'] = 'Royal Aroma (GHS36)';
+                            $_SESSION['itemprice'] = 36;
                             break;
                         case 3:
                             $_SESSION['itemname'] = 'Dell XPS (GHS7000)';
