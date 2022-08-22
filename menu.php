@@ -39,7 +39,7 @@ class Menu
                 $res .= "2. Computer & Accessories\n";
                 $res .= "3. Phones\n";
                 $res .= "4. Smart Watches\n";
-                $res .= "5. Back\n";
+                $res .= "4. Back\n";
 
                 echo 'CON '.$res;
             } elseif ($category == 2) {
@@ -159,13 +159,33 @@ class Menu
 
                             break;
                         case 2:
-                            $productname = 'BRUHM TV (GH950)';
-                            $productprice = 950;
+                            $productname = 'Hp Pavillion(GHS2500)';
+                            $productprice = 2500;
 
                             break;
                         case 3:
-                            $productname = 'PANASONIC TV (GH1000)';
+                            $productname = 'Dell XPS (GHS7000)';
+                            $productprice = 7000;
+                            break;
+                        default:
+                            // code...
+                            break;
+                    }
+                } elseif ($subcategory == 3) {
+                    switch ($product) {
+                        case 1:
+                            $productname = 'Techo Spark 4 (GHS700)';
+                            $productprice = 700;
+
+                            break;
+                        case 2:
+                            $productname = 'Huawei Y Prime (GH1000)';
                             $productprice = 1000;
+
+                            break;
+                        case 3:
+                            $productname = 'Dell XPS (GHS7000)';
+                            $productprice = 7000;
                             break;
                         default:
                             // code...
