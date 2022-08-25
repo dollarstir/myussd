@@ -22,7 +22,7 @@ class Menu
     public function aboutus()
     {
         $response = "Welcome to AV Enterprise . \n";
-        $response .= "We are fast growing and also the first USSD based shop accross the glob  \n";
+        $response .= "We are fast growing and also the first USSD based shop accross the globe  \n";
 
         echo 'END '.$response;
     }
