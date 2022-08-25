@@ -71,7 +71,7 @@ class Menu
 
                 echo 'CON '.$res;
             } elseif ($category == 5) {
-                $level = 1;
+                echo 'CON '.$this->mainmenu();
             }
         }
 
