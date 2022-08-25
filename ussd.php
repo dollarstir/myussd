@@ -20,7 +20,7 @@ if ($text == '') {
                 echo 'END';
                 break;
                 default:
-                echo 'END';
+                echo 'END'.$menu->aboutus();
                 break;
             }
 }
