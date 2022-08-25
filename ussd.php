@@ -19,8 +19,12 @@ if ($text == '') {
             case '2':
                 echo 'END';
                 break;
-                default:
+            case '3':
                 echo 'END'.$menu->aboutus();
+
+                break;
+                default:
+
                 break;
             }
 }
