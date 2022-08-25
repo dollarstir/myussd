@@ -428,7 +428,7 @@ class Menu
                 $res = "Order confirmed item will be deliverd to $phoneNumber \n";
                 $res .= "Order No :$orderid. \n";
 
-                echo 'END '.$res;
+                echo 'CON '.$res;
             } elseif ($comfirm == 2) {
                 echo $this->shopping($textlevel, $phoneNumber);
             }
