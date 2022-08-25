@@ -420,7 +420,7 @@ class Menu
                 $orderid = rand('111111', '999999');
                 $dateadded = date('jS F, Y');
 
-                $ins = mysqli_query($this->conn, "INSERT INTO orders (orderno,product,price,quantity,user,status,dateadded) VALUES('$orderid','".$_SESSION['itemname']."','".$_SESSION['itemprice']."','".$_SESSION['quantity']."','$phoneNumber','pending','$dateadded')");
+                $ins = mysqli_query($this->conn, "INSERT INTO orders (ordno,product,price,quantity,user,status,dateadded) VALUES('$orderid','".$_SESSION['itemname']."','".$_SESSION['itemprice']."','".$_SESSION['quantity']."','$phoneNumber','pending','$dateadded')");
 
                 $res = "Order confirmed item will be deliverd to $phoneNumber \n";
                 $res .= "Order No :$orderid. \n";
