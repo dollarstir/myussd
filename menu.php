@@ -19,6 +19,14 @@ class Menu
         return $response;
     }
 
+    public function aboutus()
+    {
+        $response = "Welcome to AV Enterprise . \n";
+        $response .= "We are fast growing and also the first USSD based shop accross the glob  \n";
+
+        return $response;
+    }
+
     public function shopping($textlevel, $phoneNumber)
     {
         session_start();
