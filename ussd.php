@@ -20,7 +20,7 @@ if ($text == '') {
                 echo 'END';
                 break;
             case '3':
-                echo 'END'.$menu->aboutus();
+                $menu->aboutus();
 
                 break;
                 default:

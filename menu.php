@@ -24,7 +24,7 @@ class Menu
         $response = "Welcome to AV Enterprise . \n";
         $response .= "We are fast growing and also the first USSD based shop accross the glob  \n";
 
-        return $response;
+        echo 'END '.$response;
     }
 
     public function shopping($textlevel, $phoneNumber)
