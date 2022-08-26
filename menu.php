@@ -419,9 +419,224 @@ class Menu
             if ($comfirm == 1) {
                 $orderid = rand('111111', '999999');
                 $dateadded = date('jS F, Y');
-                $prod = $textlevel[3];
+                $prod = '';
                 $quant = $textlevel[4];
-                $pr = 200;
+                $pr = 0;
+
+                $category = $textlevel[1];
+                $subcategory = $textlevel[2];
+                $product = $textlevel[3];
+
+                // Category 1*******************************************************************************************
+
+                if ($category == 1) {
+                    if ($subcategory == 1) {
+                        switch ($product) {
+                        case 1:
+                            $prod = 'NASCO TV (GHS700)';
+                            $pr = 700;
+
+                            break;
+                        case 2:
+                            $prod = 'BRUHM TV (GH950)';
+                            $_SESSION['itemprice'] = 950;
+
+                            break;
+                        case 3:
+                            $prod = 'PANASONIC TV (GH1000)';
+                            $pr = 1000;
+                            break;
+                        default:
+                            // code...
+                            break;
+                    }
+                    } elseif ($subcategory == 2) {
+                        switch ($product) {
+                        case 1:
+                            $prod = 'Wireless keyboard (GHS40)';
+                            $pr = 40;
+
+                            break;
+                        case 2:
+                            $prod = 'Hp Pavillion(GHS2500)';
+                            $pr = 2500;
+
+                            break;
+                        case 3:
+                            $prod = 'Dell XPS (GHS7000)';
+                            $pr = 7000;
+                            break;
+                        default:
+                            // code...
+                            break;
+                    }
+                    } elseif ($subcategory == 3) {
+                        switch ($product) {
+                        case 1:
+                            $prod = 'Techo Spark 4 (GHS700)';
+                            $pr = 700;
+
+                            break;
+                        case 2:
+                            $prod = 'Huawei Y Prime (GH1000)';
+                            $pr = 1000;
+
+                            break;
+                        case 3:
+                            $prod = 'Iphone 13 Pro Max (GH6500)';
+                            $pr = 6500;
+                            break;
+                        default:
+                            // code...
+                            break;
+                    }
+                    } elseif ($subcategory == 4) {
+                        switch ($product) {
+                        case 1:
+                            $prod = 'Samsung Smart watch (GHS1200)';
+                            $pr = 1200;
+
+                            break;
+                        case 2:
+                            $prod = 'Apple series 3 Watch (GH1300)';
+                            $pr = 1300;
+
+                            break;
+                        case 3:
+                            $prod = 'Apple series 6 Watch (GH1600)';
+                            $pr = 1600;
+                            break;
+                        default:
+                            // code...
+                            break;
+                    }
+                    }
+                }
+                // Category 2*********************************************************************************************
+                elseif ($category == 2) {
+                    if ($subcategory == 1) {
+                        switch ($product) {
+                        case 1:
+                            $prod = 'Frytol (GHS27)';
+                            $pr = 27;
+
+                            break;
+                        case 2:
+                            $prod = 'Bolgies (GHS32)';
+                            $pr = 32;
+
+                            break;
+                        case 3:
+                            $prod = 'Olive (GHS34)';
+                            $pr = 34;
+                            break;
+                        default:
+                            // code...
+                            break;
+                    }
+                    } elseif ($subcategory == 2) {
+                        switch ($product) {
+                        case 1:
+                            $prod = 'Royal Fist (GHS30)';
+                            $pr = 30;
+
+                            break;
+                        case 2:
+                            $prod = 'Royal Aroma (GHS36)';
+                            $pr = 36;
+                            break;
+                        case 3:
+                            $prod = 'Jasmine (GHS45)';
+                            $pr = 45;
+                            break;
+                        default:
+                            // code...
+                            break;
+                    }
+                    } elseif ($subcategory == 3) {
+                        switch ($product) {
+                        case 1:
+                            $prod = 'Oba Spaghetti(GHS2)';
+                            $pr = 2;
+
+                            break;
+                        case 2:
+                            $prod = 'Enapa Spaghetti (GHS3)';
+                            $pr = 3;
+                            break;
+                        case 3:
+                            $prod = 'Indomine (GHS4)';
+                            $pr = 4;
+                            break;
+                        default:
+
+                            break;
+                    }
+                    }
+                }
+                // CATEGORY 3*********************************************************************************************
+
+                elseif ($category == 3) {
+                    if ($subcategory == 1) {
+                        switch ($product) {
+                        case 1:
+                            $prod = 'Eye Lashes (GHS10)';
+                            $pr = 10;
+
+                            break;
+                        case 2:
+                            $prod = 'Nails (GHS30)';
+                            $pr = 30;
+
+                            break;
+                        case 3:
+                            $prod = 'Brush (GHS34)';
+                            $pr = 34;
+                            break;
+                        default:
+                            // code...
+                            break;
+                    }
+                    } elseif ($subcategory == 2) {
+                        switch ($product) {
+                        case 1:
+                            $prod = 'Color Me (GHS15)';
+                            $pr = 15;
+
+                            break;
+                        case 2:
+                            $prod = 'MJ Code (GHS60)';
+                            $pr = 60;
+                            break;
+                        case 3:
+                            $prod = 'Brown Orchide (GHS100)';
+                            $pr = 100;
+                            break;
+                        default:
+                            // code...
+                            break;
+                    }
+                    } elseif ($subcategory == 3) {
+                        switch ($product) {
+                        case 1:
+                            $prod = 'Mouthwash(GHS5)';
+                            $pr = 5;
+
+                            break;
+                        case 2:
+                            $prod = 'Colgate charcol (GHS10)';
+                            $pr = 10;
+                            break;
+                        case 3:
+                            $prod = 'Teeth whiteners (GHS100)';
+                            $pr = 100;
+                            break;
+                        default:
+
+                            break;
+                    }
+                    }
+                }
 
                 $ins = mysqli_query($this->conn, "INSERT INTO orders (ordno,product,price,quantity,user,status,dateadded) VALUES('$orderid','$prod','$pr','$quant','$phoneNumber','pending','$dateadded')");
 
