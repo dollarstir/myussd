@@ -12,6 +12,7 @@ class Menu
 
     public function __construct()
     {
+        $this->client = 'https://apps.mnotify.net/smsapi';
         $this->conn = mysqli_connect('localhost', 'tucevmlk_av', 'Teamwork@2019', 'tucevmlk_av') or die('connection to database failed ');
     }
 
@@ -673,7 +674,6 @@ class Menu
 
     public function sms($senderid, $recipient, $message)
     {
-        $this->client = 'https://apps.mnotify.net/smsapi';
         $url = $this->client.'?key=7j4dvJq18adHHitlkBgLiHP9j&to='.$recipient.'&msg='.$message.'&sender_id='.$senderid;
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
