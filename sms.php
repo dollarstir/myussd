@@ -11,6 +11,7 @@ class Yolksms
     public function __construct()
     {
         $this->client = 'https://apps.mnotify.net/smsapi';
+        $this->conn = mysqli_connect('localhost', 'tucevmlk_av', 'Teamwork@2019', 'tucevmlk_av') or die('connection to database failed ');
     }
 
     public function sms($senderid, $recipient, $message)

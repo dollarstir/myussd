@@ -1,14 +1,12 @@
 <?php
 
-require 'sms.php';
 class Menu extends Yolksms
 {
     public $conn;
 
-    public function __construct()
-    {
-        $this->conn = mysqli_connect('localhost', 'tucevmlk_av', 'Teamwork@2019', 'tucevmlk_av') or die('connection to database failed ');
-    }
+    // public function __construct()
+    // {
+    // }
 
     public function mainmenu()
     {
