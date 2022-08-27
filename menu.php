@@ -31,7 +31,7 @@ class Menu
     {
         $res = '';
 
-        $sel = mysqli_query($this->conn, "SELECT * FROM orders WHERE  user ='$phoneNumber'");
+        $sel = mysqli_query($this->conn, "SELECT * FROM orders WHERE  user ='$phoneNumber' ORDER BY id DESC ");
         while ($row = mysqli_fetch_array($sel)) {
             $res .= $row['ordno'].' - '.$row['product'].' - '.$row['status']."\n";
             // code...
