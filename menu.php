@@ -27,6 +27,10 @@ class Menu
         echo 'END '.$response;
     }
 
+    public function orders($phoneNumber)
+    {
+    }
+
     public function shopping($textlevel, $phoneNumber)
     {
         session_start();
