@@ -659,7 +659,7 @@ class Menu
 
                 $ins = mysqli_query($this->conn, "INSERT INTO orders (ordno,product,price,quantity,user,status,dateadded) VALUES('$orderid','$prod','$pr','$quant','$phoneNumber','pending','$dateadded')");
                 $message = "Order $orderid successful item will be deliverd to $phoneNumber when confirmed.";
-                $this->sms('Dollarsoft', $phoneNumber, $message);
+                $this->sms('AV Mall', $phoneNumber, $message);
                 $res = "Order successful, item will be deliverd to $phoneNumber when confirmed. \n";
                 $res .= "Order No :$orderid. \n";
 
