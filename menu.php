@@ -29,6 +29,13 @@ class Menu
 
     public function orders($phoneNumber)
     {
+        $res = '';
+
+        $sel = mysqli_query($this->conn, "SELECT * FROM orders WHERE  user ='$phoneNumber'");
+        while ($row = mysqli_fetch_array($sel)) {
+            $res .= $row['ordno'].' - '.$row['product'];
+            // code...
+        }
     }
 
     public function shopping($textlevel, $phoneNumber)
