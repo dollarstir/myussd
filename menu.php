@@ -1,5 +1,5 @@
 <?php
-
+require 'sms.php';
 class Menu extends Yolksms
 {
     public $conn;
