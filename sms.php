@@ -2,12 +2,6 @@
 
 class Yolksms
 {
-    public $senderid;
-    public $recipient;
-    // public $apikey;
-    public $message;
-    public $client;
-
     // public function __construct()
     // {
     // }
