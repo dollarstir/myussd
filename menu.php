@@ -3,6 +3,7 @@
 class Menu extends Yolksms
 {
     public $conn;
+    public $client;
 
     public function __construct()
     {
