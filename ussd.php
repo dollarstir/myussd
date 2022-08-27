@@ -17,7 +17,7 @@ if ($text == '') {
             $menu->shopping($textlevel, $phoneNumber);
             break;
             case '2':
-                echo 'END';
+                $menu->orders($phoneNumber);
                 break;
             case '3':
                 $menu->aboutus();
