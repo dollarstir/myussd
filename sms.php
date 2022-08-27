@@ -7,6 +7,7 @@ class Yolksms
     // public $apikey;
     public $message;
     public $client;
+    public $conn;
 
     public function __construct()
     {
