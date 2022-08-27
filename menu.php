@@ -1,13 +1,12 @@
 <?php
+
 require 'sms.php';
 class Menu extends Yolksms
 {
     public $conn;
-    public $client;
 
     public function __construct()
     {
-        $this->client = 'https://apps.mnotify.net/smsapi';
         $this->conn = mysqli_connect('localhost', 'tucevmlk_av', 'Teamwork@2019', 'tucevmlk_av') or die('connection to database failed ');
     }
 

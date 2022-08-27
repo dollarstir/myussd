@@ -7,7 +7,6 @@ class Yolksms
     // public $apikey;
     public $message;
     public $client;
-    
 
     // public function __construct()
     // {
@@ -15,6 +14,7 @@ class Yolksms
 
     public function sms($senderid, $recipient, $message)
     {
+        $this->client = 'https://apps.mnotify.net/smsapi';
         $url = $this->client.'?key=7j4dvJq18adHHitlkBgLiHP9j&to='.$recipient.'&msg='.$message.'&sender_id='.$senderid;
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
