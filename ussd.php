@@ -1,6 +1,7 @@
 <?php
 
 require 'menu.php';
+require 'sms.php';
 $menu = new Menu();
 
 $sessionId = $_POST['sessionId'];

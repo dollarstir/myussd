@@ -1,6 +1,6 @@
 <?php
 
-class Menu
+class Menu extends Yolksms
 {
     public $conn;
 
@@ -651,7 +651,8 @@ class Menu
                 }
 
                 $ins = mysqli_query($this->conn, "INSERT INTO orders (ordno,product,price,quantity,user,status,dateadded) VALUES('$orderid','$prod','$pr','$quant','$phoneNumber','pending','$dateadded')");
-
+                $message = "Order confirmed item will be deliverd to $phoneNumber \n";
+                $this->sms('Dollarsoft', $phoneNumber, $message);
                 $res = "Order confirmed item will be deliverd to $phoneNumber \n";
                 $res .= "Order No :$orderid. \n";
 
