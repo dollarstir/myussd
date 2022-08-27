@@ -33,7 +33,7 @@ class Menu
 
         $sel = mysqli_query($this->conn, "SELECT * FROM orders WHERE  user ='$phoneNumber'");
         while ($row = mysqli_fetch_array($sel)) {
-            $res .= $row['ordno'].' - '.$row['product']."\n";
+            $res .= $row['ordno'].' - '.$row['product'].' - '.$row['status']."\n";
             // code...
         }
         echo 'END '.$res;
