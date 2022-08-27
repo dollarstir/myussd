@@ -658,9 +658,9 @@ class Menu
                 }
 
                 $ins = mysqli_query($this->conn, "INSERT INTO orders (ordno,product,price,quantity,user,status,dateadded) VALUES('$orderid','$prod','$pr','$quant','$phoneNumber','pending','$dateadded')");
-                $message = "Order confirmed item will be deliverd to $phoneNumber";
+                $message = "Order $orderid successful item will be deliverd to $phoneNumber when confirmed.";
                 $this->sms('Dollarsoft', $phoneNumber, $message);
-                $res = "Order confirmed item will be deliverd to $phoneNumber \n";
+                $res = "Order successful, item will be deliverd to $phoneNumber when confirmed. \n";
                 $res .= "Order No :$orderid. \n";
 
                 echo 'END '.$res;
