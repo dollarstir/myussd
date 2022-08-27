@@ -7,13 +7,11 @@ class Yolksms
     // public $apikey;
     public $message;
     public $client;
-    public $conn;
+    
 
-    public function __construct()
-    {
-        $this->client = 'https://apps.mnotify.net/smsapi';
-        $this->conn = mysqli_connect('localhost', 'tucevmlk_av', 'Teamwork@2019', 'tucevmlk_av') or die('connection to database failed ');
-    }
+    // public function __construct()
+    // {
+    // }
 
     public function sms($senderid, $recipient, $message)
     {
